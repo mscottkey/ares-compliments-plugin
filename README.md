@@ -23,7 +23,7 @@ This plugin has no web portal code.
 
 ## Installation
 
-In the game, run `plugin/install compliments`.
+In the game, run `plugin/install <github url>`.
 
 Additional configuration options are described below.
 
