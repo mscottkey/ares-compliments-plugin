@@ -43,3 +43,7 @@ This plugin adds an achievement for giving comps. You'll want to add `comp: fa-h
 ## Uninstalling
 
 Removing the plugin requires some code fiddling.  See [Uninstalling Plugins](https://www.aresmush.com/tutorials/code/extras.html#uninstalling-plugins).
+
+## License
+
+Same as [AresMUSH](https://aresmush.com/license).
