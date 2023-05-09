@@ -10,5 +10,9 @@ module AresMUSH
       end
     end
 
+    def self.can_view_comps?(actor)
+      actor && actor.has_permission?("view_comps")
+    end
+
   end
 end

@@ -8,6 +8,11 @@ module AresMUSH
          self.target_name = cmd.args ? titlecase_arg(cmd.args) : enactor_name
       end
 
+      def check_can_view
+        return nil if Compliments.can_view_comps?(enactor)
+        return t('dispatcher.not_allowed')
+      end
+
       def handle
         ClassTargetFinder.with_a_character(self.target_name, client, enactor) do |model|
          comps = model.comps.to_a.sort_by { |c| c.created_at }.reverse
