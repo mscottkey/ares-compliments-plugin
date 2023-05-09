@@ -3,6 +3,7 @@ compliments:
   give_luck: true
   luck_amount: 0.05
   comp_scenes: true
+  public_compliments: false
   permissions:
     view_comps: View compliments on others. 
   achievements:
