@@ -9,7 +9,7 @@ module AresMUSH
       end
 
       def check_can_view
-        return nil if self.target == enactor_name
+        return nil if self.target_name == enactor_name
         return nil if Compliments.can_view_comps?(enactor)
         return nil if Global.read_config("compliments", "public_sheets")
         return t('dispatcher.not_allowed')
