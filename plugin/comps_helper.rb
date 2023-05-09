@@ -11,7 +11,7 @@ module AresMUSH
     end
 
     def self.can_view_comps?(actor)
-      return true if Global.read_config("Compliments", "public_compliments")
+      return true if Global.read_config("compliments", "public_compliments")
       return false if !actor
       actor.has_permission?("view_comps")
 
